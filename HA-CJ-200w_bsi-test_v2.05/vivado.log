@@ -1,0 +1,1075 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Aug 27 09:40:58 2024
+# Process ID: 1768
+# Current directory: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5808 E:\HAHK\BD\2000k\software\HA-CJ-200w\HA-CJ-200w-test_v2.00\project_1.xpr
+# Log file: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/vivado.log
+# Journal file: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 871.719 ; gain = 205.301
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Aug 27 10:48:18 2024] Launched synth_1...
+Run output will be captured here: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/synth_1/runme.log
+[Tue Aug 27 10:48:18 2024] Launched impl_1...
+Run output will be captured here: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 4489 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1_AR71948_AR71948
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz_1_inst/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2847.512 ; gain = 47.434
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2847.512 ; gain = 47.434
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2847.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2806 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2800 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:01:07 ; elapsed = 00:00:54 . Memory (MB): peak = 3070.211 ; gain = 787.070
+open_report: Time (s): cpu = 00:00:28 ; elapsed = 00:00:13 . Memory (MB): peak = 3270.605 ; gain = 200.395
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property is_loc_fixed true [get_ports [list  {lvds_p6[8]}]]
+set_property is_loc_fixed false [get_ports [list  {lvds_p6[8]}]]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Aug 27 11:25:17 2024] Launched synth_1...
+Run output will be captured here: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx690tffg1157-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'clk_wiz_1_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/vio_0/vio_0.dcp' for cell 'pixel_top_inst/IDELAY_VIO'
+INFO: [Project 1-454] Reading design checkpoint 'e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.dcp' for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k'
+INFO: [Project 1-454] Reading design checkpoint 'e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_pixel.dcp' for cell 'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst'
+INFO: [Netlist 29-17] Analyzing 4772 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1_AR71948_AR71948
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clk_wiz_1_inst/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz_1_inst/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: pixel_top_inst/IDELAY_VIO UUID: eaa0ff52-d26b-58a7-9ed8-05ee0df7dc0d 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst UUID: 3cf4337f-4cf8-51a3-89fb-2976d03bf994 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst UUID: 259b03d2-f0d0-5f70-b62a-7f9d3cebc40c 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst UUID: 0bb9c267-8f7d-5d00-87a4-122dbec36fde 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst UUID: b21800f5-da19-5124-8257-d5dffd7a7a4c 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst UUID: 7a84a2a2-9b53-50ec-8d06-1dbf3a7d46f4 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst UUID: 2e214574-bade-5c6f-84ee-e665f9af5231 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst UUID: 3203ce7f-26c3-51b6-938f-a438619b6189 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst UUID: d8a26b82-4740-524d-a1b8-ea96b19f19b2 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst UUID: b5fdaa10-f912-5d7c-93c5-28d3b124cddf 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst UUID: 370dfaff-1c93-5113-a14d-a2fba99ae32d 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst UUID: 63612d03-48b5-5f15-805d-dbee7153629b 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst UUID: e49a44be-c3bc-5c6d-9474-ce4bbb7345ab 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst UUID: 237b3765-f200-5b78-87f0-9f8892551e03 
+INFO: [Chipscope 16-324] Core: pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst UUID: 0a7e38fa-78e6-55da-8c5e-8ebd6ef1ac6f 
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xdc] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/vio_2/vio_2.xdc] for cell 'pixel_top_inst/u_spi_config/vio_2_inst1_32'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/vio_2/vio_2.xdc] for cell 'pixel_top_inst/u_spi_config/vio_2_inst1_32'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'clk_wiz_1_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'clk_wiz_1_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_wiz_1_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:57]
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_wiz_1_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila_impl.xdc] for cell 'pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst/inst'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/ila_pixel/ila_v6_2/constraints/ila.xdc] for cell 'pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst/inst'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'pixel_top_inst/IDELAY_VIO'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'pixel_top_inst/IDELAY_VIO'
+Parsing XDC File [E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0'
+Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0'
+Finished Parsing XDC File [e:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k_clocks.xdc] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[0].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[10].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[11].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[12].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[13].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[1].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[2].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[3].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[4].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[5].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[6].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[7].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[8].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'pixel_top_inst/pixel_sync[9].lvds1_fifo512bit_1k/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 4348.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2800 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2800 instances
+
+open_run: Time (s): cpu = 00:01:31 ; elapsed = 00:01:19 . Memory (MB): peak = 4457.215 ; gain = 489.984
+close_design
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/fifo512bit_1k/fifo512bit_1k.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Aug 27 11:32:39 2024] Launched synth_1...
+Run output will be captured here: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/synth_1/runme.log
+[Tue Aug 27 11:32:39 2024] Launched impl_1...
+Run output will be captured here: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Warning: Cannot create '3000:arm' GDB server: 
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 4460.496 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+current_hw_device [get_hw_devices xc7vx690t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+INFO: [Labtools 27-1435] Device xc7vx690t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7vx690t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+program_hw_devices [get_hw_devices xc7vx690t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 4460.496 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:2. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:2, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets localhost:3121/xilinx_tcf/Xilinx/00001c9447c101]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+program_hw_devices [get_hw_devices xc7vx690t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 4460.496 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 14 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 2 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 4460.496 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[13].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[13].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[13].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[13].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[13].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[7].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[7].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[7].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[7].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[7].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[7].u_pixel_receive/pixel_frame was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[8].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[8].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[8].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[8].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[8].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[9].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[9].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[9].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[9].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[9].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}]]
+write_cfgmem  -format mcs -size 64 -interface SPIx4 -loadbit {up 0x00000000 "E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit" } -file "E:/HAHK/BD/2000k/software/HA-CJ-200w/20240827_v2.mcs"
+Command: write_cfgmem -format mcs -size 64 -interface SPIx4 -loadbit {up 0x00000000 "E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit" } -file E:/HAHK/BD/2000k/software/HA-CJ-200w/20240827_v2.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit
+Writing file E:/HAHK/BD/2000k/software/HA-CJ-200w/20240827_v2.mcs
+Writing log file E:/HAHK/BD/2000k/software/HA-CJ-200w/20240827_v2.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x006F840B    Aug 27 11:45:08 2024    E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.FILES [list "E:/HAHK/BD/2000k/software/HA-CJ-200w/20240827_v2.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7vx690t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7vx690t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7vx690t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 4460.496 ; gain = 0.000
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst' at location 'uuid_0A7E38FA78E655DA8C5E8EBD6EF1AC6F' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst' at location 'uuid_0BB9C2678F7D5D0087A4122DBEC36FDE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst' at location 'uuid_237B3765F2005B7887F09F8892551E03' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst' at location 'uuid_259B03D2F0D05F70B62A7F9D3CEBC40C' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst' at location 'uuid_2E214574BADE5C6F84EEE665F9AF5231' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst' at location 'uuid_3203CE7F26C351B6938FA438619B6189' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst' at location 'uuid_370DFAFF1C935113A14DA2FBA99AE32D' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst' at location 'uuid_3CF4337F4CF851A389FB2976D03BF994' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/u_spi_config/vio_2_inst1_32' at location 'uuid_4145B4FA53035155846304EE08DEDA50' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst' at location 'uuid_63612D0348B55F15805DDBEE7153629B' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst' at location 'uuid_7A84A2A29B5350EC8D061DBF3A7D46F4' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst' at location 'uuid_B21800F5DA1951248257D5DFFD7A7A4C' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst' at location 'uuid_B5FDAA10F9125D7C93C528D3B124CDDF' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst' at location 'uuid_D8A26B824740524DA1B8EA96B19F19B2' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst' at location 'uuid_E49A44BEC3BC5C6D9474CE4BBB7345AB' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/IDELAY_VIO' at location 'uuid_EAA0FF52D26B58A79ED805EE0DF7DC0D' from probes file, since it cannot be found on the programmed device.
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+Mfg ID : 20   Memory Type : bb   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:06 ; elapsed = 00:08:35 . Memory (MB): peak = 4460.496 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 4460.496 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+current_hw_device [get_hw_devices xc7vx690t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 14 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 2 VIO core(s).
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+WARNING: [Labtools 27-1973] Mismatch between the design programmed into the device xc7vx690t (JTAG device index = 0) and the probes file(s) E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx.
+ The device core at location uuid_237B3765F2005B7887F09F8892551E03, has 0 ILA output port(s), but the core in the probes file(s) have 1 ILA output port(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+create_hw_cfgmem -hw_device [get_hw_devices xc7vx690t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+refresh_hw_device: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 4460.496 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_hw_device' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+INFO: [Labtools 27-1435] Device xc7vx690t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 4460.496 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+current_hw_device [get_hw_devices xc7vx690t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:2. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:2, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets localhost:3121/xilinx_tcf/Xilinx/00001c9447c101]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 14 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 2 VIO core(s).
+CRITICAL WARNING: [Labtools 27-1433] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has an unrecognizable debug core (slave type = 17) at user chain = 1, index = 2.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst' at location 'uuid_3CF4337F4CF851A389FB2976D03BF994' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+create_hw_cfgmem -hw_device [get_hw_devices xc7vx690t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+refresh_hw_device: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 4460.496 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[0].u_pixel_receive1/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/DATA_EN was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[1].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/DATA_EN was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {pixel_top_inst/pixel_sync[10].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[10].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[10].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[10].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[10].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-27 12:04:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-27 12:04:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_6.wcfg} -radix hex { {pixel_top_inst/pixel_sync[2].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[2].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[2].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[2].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[2].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_6' trigger was armed at 2024-Aug-27 12:05:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_6' triggered at 2024-Aug-27 12:05:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_6' trigger was armed at 2024-Aug-27 12:05:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_6' triggered at 2024-Aug-27 12:05:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_6' trigger was armed at 2024-Aug-27 12:05:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_6' triggered at 2024-Aug-27 12:05:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+INFO: [Labtools 27-1435] Device xc7vx690t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.FILES [list "E:/HAHK/BD/2000k/software/HA-CJ-200w/20240827_v2.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7vx690t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7vx690t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7vx690t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 4460.496 ; gain = 0.000
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst' at location 'uuid_0A7E38FA78E655DA8C5E8EBD6EF1AC6F' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst' at location 'uuid_0BB9C2678F7D5D0087A4122DBEC36FDE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst' at location 'uuid_237B3765F2005B7887F09F8892551E03' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst' at location 'uuid_259B03D2F0D05F70B62A7F9D3CEBC40C' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst' at location 'uuid_2E214574BADE5C6F84EEE665F9AF5231' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst' at location 'uuid_3203CE7F26C351B6938FA438619B6189' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst' at location 'uuid_370DFAFF1C935113A14DA2FBA99AE32D' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst' at location 'uuid_3CF4337F4CF851A389FB2976D03BF994' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/u_spi_config/vio_2_inst1_32' at location 'uuid_4145B4FA53035155846304EE08DEDA50' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst' at location 'uuid_63612D0348B55F15805DDBEE7153629B' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst' at location 'uuid_7A84A2A29B5350EC8D061DBF3A7D46F4' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst' at location 'uuid_B21800F5DA1951248257D5DFFD7A7A4C' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst' at location 'uuid_B5FDAA10F9125D7C93C528D3B124CDDF' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst' at location 'uuid_D8A26B824740524DA1B8EA96B19F19B2' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst' at location 'uuid_E49A44BEC3BC5C6D9474CE4BBB7345AB' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/IDELAY_VIO' at location 'uuid_EAA0FF52D26B58A79ED805EE0DF7DC0D' from probes file, since it cannot be found on the programmed device.
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx690t_0] 0]]
+Mfg ID : 20   Memory Type : bb   Memory Capacity : 20   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:07 ; elapsed = 00:08:34 . Memory (MB): peak = 4460.496 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+INFO: [Labtools 27-1435] Device xc7vx690t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001c9447c101
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+current_hw_device [get_hw_devices xc7vx690t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:5. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:5, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets localhost:3121/xilinx_tcf/Xilinx/00001c9447c101]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 14 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has 2 VIO core(s).
+CRITICAL WARNING: [Labtools 27-1433] Device xc7vx690t (JTAG device index = 0) is programmed with a design that has an unrecognizable debug core (slave type = 17) at user chain = 1, index = 5.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst' at location 'uuid_B21800F5DA1951248257D5DFFD7A7A4C' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+create_hw_cfgmem -hw_device [get_hw_devices xc7vx690t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+refresh_hw_device: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 4460.496 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[10].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/DATA_EN was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[12].u_pixel_receive/line_cnt was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[2].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[3].u_pixel_receive/DATA_EN was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[4].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}]]
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/bit_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/data_out_276bit was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/frame_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/line_cnt was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[0].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[10].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[11].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[1].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[2].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[3].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[4].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[5].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[6].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[7].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[8].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+WARNING: Simulation object pixel_top_inst/pixel_sync[5].u_pixel_receive/pins[9].data_in_from_pins_delay_buf_reg_n_0_ was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {pixel_top_inst/pixel_sync[0].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[0].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[0].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[0].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[0].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Aug-27 12:19:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Aug-27 12:19:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_5' trigger was armed at 2024-Aug-27 12:19:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_5' triggered at 2024-Aug-27 12:19:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2024-Aug-27 12:19:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2024-Aug-27 12:19:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_5' trigger was armed at 2024-Aug-27 12:19:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_5' triggered at 2024-Aug-27 12:19:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_5.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_6' trigger was armed at 2024-Aug-27 12:19:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_6' triggered at 2024-Aug-27 12:19:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_6.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_7.wcfg} -radix hex { {pixel_top_inst/pixel_sync[3].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[3].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[3].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[3].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[3].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_7' trigger was armed at 2024-Aug-27 12:19:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_7' triggered at 2024-Aug-27 12:19:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_7.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_8.wcfg} -radix hex { {pixel_top_inst/pixel_sync[4].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[4].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[4].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[4].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[4].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_8' trigger was armed at 2024-Aug-27 12:20:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[4].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_8' triggered at 2024-Aug-27 12:20:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_8.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_9.wcfg} -radix hex { {pixel_top_inst/pixel_sync[5].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[5].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[5].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[5].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[5].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_9' trigger was armed at 2024-Aug-27 12:20:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_9' triggered at 2024-Aug-27 12:20:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_9.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_10.wcfg} -radix hex { {pixel_top_inst/pixel_sync[6].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[6].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[6].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[6].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[6].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_10' trigger was armed at 2024-Aug-27 12:20:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_10' triggered at 2024-Aug-27 12:20:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_10.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_11' trigger was armed at 2024-Aug-27 12:20:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_11' triggered at 2024-Aug-27 12:20:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_11.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_12' trigger was armed at 2024-Aug-27 12:20:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_12' triggered at 2024-Aug-27 12:20:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_12.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_13' trigger was armed at 2024-Aug-27 12:20:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_13' triggered at 2024-Aug-27 12:20:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_13.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {pixel_top_inst/pixel_sync[11].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[11].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[11].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[11].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[11].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Aug-27 12:20:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Aug-27 12:20:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {pixel_top_inst/pixel_sync[11].u_pixel_receive/pixel_frame} }
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes {pixel_top_inst/pixel_sync[11].u_pixel_receive/pixel_frame} -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2024-Aug-27 12:21:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2024-Aug-27 12:21:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v2.00/project_1.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 27 12:21:43 2024...

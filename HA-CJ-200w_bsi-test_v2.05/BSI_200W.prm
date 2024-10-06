@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               64M
+Start Address      0x00000000
+End Address        0x03FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00B2DC3F    Sep 20 16:25:23 2024    E:/work/vivado_prj/690t200w/HA-CJ-200w_bsi-test_v2.05/project_1.runs/impl_1/cj_200w_top.bit

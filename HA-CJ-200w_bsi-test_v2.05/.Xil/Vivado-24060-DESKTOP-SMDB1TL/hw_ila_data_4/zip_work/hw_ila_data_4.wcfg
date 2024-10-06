@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1/project_1.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/bit_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/bit_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_cnt[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/DATA_EN" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/DATA_EN</obj_property>
+      <obj_property name="ObjectShortName">DATA_EN</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/data_out_276bit" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/data_out_276bit[275:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_276bit[275:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/frame_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/frame_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_cnt[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/line_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/line_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">line_cnt[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus445" type="vbus">
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[0].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[0].data_in_from_pins_delay_buf_reg_n_0_[0:0]</obj_property>
+         <obj_property name="ObjectShortName">pins[0].data_in_from_pins_delay_buf_reg_n_0_[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[1].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[1].data_in_from_pins_delay_buf_reg_n_0_[1:1]</obj_property>
+         <obj_property name="ObjectShortName">pins[1].data_in_from_pins_delay_buf_reg_n_0_[1:1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[2].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[2].data_in_from_pins_delay_buf_reg_n_0_[2:2]</obj_property>
+         <obj_property name="ObjectShortName">pins[2].data_in_from_pins_delay_buf_reg_n_0_[2:2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[3].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[3].data_in_from_pins_delay_buf_reg_n_0_[3:3]</obj_property>
+         <obj_property name="ObjectShortName">pins[3].data_in_from_pins_delay_buf_reg_n_0_[3:3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[4].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[4].data_in_from_pins_delay_buf_reg_n_0_[4:4]</obj_property>
+         <obj_property name="ObjectShortName">pins[4].data_in_from_pins_delay_buf_reg_n_0_[4:4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[5].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[5].data_in_from_pins_delay_buf_reg_n_0_[5:5]</obj_property>
+         <obj_property name="ObjectShortName">pins[5].data_in_from_pins_delay_buf_reg_n_0_[5:5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[6].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[6].data_in_from_pins_delay_buf_reg_n_0_[6:6]</obj_property>
+         <obj_property name="ObjectShortName">pins[6].data_in_from_pins_delay_buf_reg_n_0_[6:6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[7].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[7].data_in_from_pins_delay_buf_reg_n_0_[7:7]</obj_property>
+         <obj_property name="ObjectShortName">pins[7].data_in_from_pins_delay_buf_reg_n_0_[7:7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[8].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[8].data_in_from_pins_delay_buf_reg_n_0_[8:8]</obj_property>
+         <obj_property name="ObjectShortName">pins[8].data_in_from_pins_delay_buf_reg_n_0_[8:8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[9].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[9].data_in_from_pins_delay_buf_reg_n_0_[9:9]</obj_property>
+         <obj_property name="ObjectShortName">pins[9].data_in_from_pins_delay_buf_reg_n_0_[9:9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[10].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[10].data_in_from_pins_delay_buf_reg_n_0_[10:10]</obj_property>
+         <obj_property name="ObjectShortName">pins[10].data_in_from_pins_delay_buf_reg_n_0_[10:10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[11].data_in_from_pins_delay_buf_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pins[11].data_in_from_pins_delay_buf_reg_n_0_[11:11]</obj_property>
+         <obj_property name="ObjectShortName">pins[11].data_in_from_pins_delay_buf_reg_n_0_[11:11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="pixel_top_inst/pixel_sync[12].u_pixel_receive1/pixel_frame" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pixel_top_inst/pixel_sync[12].u_pixel_receive1/pixel_frame</obj_property>
+      <obj_property name="ObjectShortName">pixel_frame</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

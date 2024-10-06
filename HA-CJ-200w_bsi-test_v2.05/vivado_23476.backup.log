@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Aug  6 22:25:45 2024
+# Process ID: 23476
+# Current directory: E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23312 E:\HAHK\BD\2000k\software\HA-CJ-200w-test_v1.00\project_1\project_1.xpr
+# Log file: E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1/vivado.log
+# Journal file: E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx-VIVADO201803/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 867.402 ; gain = 197.406
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  6 22:36:25 2024...

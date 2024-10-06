@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1.gen/sources_1/ip/clk_wiz_0" --include "../../../../project_1.gen/sources_1/ip/clk_wiz_1" \
+"../../../../project_1.gen/sources_1/ip/fifo512bit_1k/sim/fifo512bit_1k.v" \
+"../../../../project_1.gen/sources_1/ip/ila_pixel/sim/ila_pixel.v" \
+"../../../../project_1.gen/sources_1/ip/vio_2/sim/vio_2.v" \
+"../../../../project_1.gen/sources_1/ip/ila_1/sim/ila_1.v" \
+"../../../../project_1.gen/sources_1/ip/vio_0/sim/vio_0.v" \
+"../../../../project_1.srcs/sources_1/new/TFI.v" \
+"../../../../project_1.srcs/sources_1/new/mem_1r1w_2000x509.v" \
+"../../../../project_1.srcs/sources_1/new/pixel_receiver.v" \
+"../../../../project_1.srcs/sources_1/new/pixel_top.v" \
+"../../../../project_1.srcs/sources_1/new/pp_pix.v" \
+"../../../../project_1.srcs/sources_1/new/pp_ram2_r_w_ctrl.v" \
+"../../../../project_1.srcs/sources_1/new/saveimg_and_sub.v" \
+"../../../../project_1.srcs/sources_1/imports/code/spi_config.v" \
+"../../../../project_1.srcs/sim_1/new/pixel_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

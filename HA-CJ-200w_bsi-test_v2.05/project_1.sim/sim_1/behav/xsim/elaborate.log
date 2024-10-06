@@ -1,0 +1,39 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pixel_top_tb_behav xil_defaultlib.pixel_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'ch_cnt' [E:/HA-CJ-200w_bsi-test_v2.05/HA-CJ-200w_bsi-test_v2.05/project_1.srcs/sources_1/new/pixel_top.v:315]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module xil_defaultlib.vio_0
+Compiling module unisims_ver.IBUFDS(DIFF_TERM="TRUE",IBUF_LOW...
+Compiling module unisims_ver.BUFIO
+Compiling module unisims_ver.BUFR(BUFR_DIVIDE="1")
+Compiling module unisims_ver.IBUFDS(DIFF_TERM="TRUE",IOSTANDA...
+Compiling module unisims_ver.IDELAYE2(HIGH_PERFORMANCE_MODE="...
+Compiling module xil_defaultlib.ila_pixel
+Compiling module xil_defaultlib.pixel_receive(DEBUG_EN=1'b1)
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_sync_stag...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_a...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_p...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_CONV_VER(...
+Compiling module fifo_generator_v13_2_6.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo512bit_1k
+Compiling module xil_defaultlib.pp_ram2_r_w_ctrl(ADDR_WIDTH=10,D...
+Compiling module xil_defaultlib.mem_1r1w_2000x512
+Compiling module xil_defaultlib.pp_pix(VA=540)
+Compiling module xil_defaultlib.interval_cal_intval_ram(DWIDTH=1...
+Compiling module xil_defaultlib.TFI(DATA_WIDTH=276,DATA_DEPTH=54...
+Compiling module xil_defaultlib.saveimg_and_sub
+Compiling module xil_defaultlib.ila_1
+Compiling module xil_defaultlib.vio_2
+Compiling module xil_defaultlib.spi_config
+Compiling module xil_defaultlib.pixel_top_default
+Compiling module xil_defaultlib.pixel_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pixel_top_tb_behav

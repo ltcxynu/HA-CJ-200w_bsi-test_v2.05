@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Aug 12 18:32:37 2024
+# Process ID: 24060
+# Current directory: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23012 E:\HAHK\BD\2000k\software\HA-CJ-200w\HA-CJ-200w-test_v1.00\project_1.xpr
+# Log file: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/vivado.log
+# Journal file: E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+current_hw_device [get_hw_devices xc7vx690t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7vx690t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property FULL_PROBES.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.runs/impl_1/cj_200w_top.ltx} [get_hw_devices xc7vx690t_0]
+set_property PROGRAM.FILE {E:/HAHK/BD/2000k/software/HA-CJ-200w/HA-CJ-200w-test_v1.00/project_1.runs/impl_1/cj_200w_top.bit} [get_hw_devices xc7vx690t_0]
+program_hw_devices [get_hw_devices xc7vx690t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets localhost:3121/xilinx_tcf/Xilinx/00001c9447c101]
+refresh_hw_device [lindex [get_hw_devices xc7vx690t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[10].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[2].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[3].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[5].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_10 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[6].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_11 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[7].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_12 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_13 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[9].u_pixel_receive/ila_pixel_inst"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/lvds_test_en -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/lvds_test_en} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes pixel_top_inst/u_spi_config/reload -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+commit_hw_vio [get_hw_probes {pixel_top_inst/u_spi_config/reload} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/u_spi_config/vio_2_inst1_32"}]]
+endgroup
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {pixel_top_inst/pixel_sync[0].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[0].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[0].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[0].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[0].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[0].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {pixel_top_inst/pixel_sync[11].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[11].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[11].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[11].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[11].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+add_wave -into {hw_ila_data_5.wcfg} -radix hex { {pixel_top_inst/pixel_sync[13].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[13].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[13].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[13].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[13].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+add_wave -into {hw_ila_data_6.wcfg} -radix hex { {pixel_top_inst/pixel_sync[1].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[1].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[1].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[1].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[1].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[1].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+add_wave -into {hw_ila_data_12.wcfg} -radix hex { {pixel_top_inst/pixel_sync[8].u_pixel_receive/bit_cnt} {pixel_top_inst/pixel_sync[8].u_pixel_receive/DATA_EN} {pixel_top_inst/pixel_sync[8].u_pixel_receive/data_out_276bit} {pixel_top_inst/pixel_sync[8].u_pixel_receive/frame_cnt} {pixel_top_inst/pixel_sync[8].u_pixel_receive/line_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[8].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[11].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[12].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx690t_0] -filter {CELL_NAME=~"pixel_top_inst/pixel_sync[13].u_pixel_receive/ila_pixel_inst"}]]

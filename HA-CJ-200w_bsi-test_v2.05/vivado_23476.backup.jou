@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Aug  6 22:25:45 2024
+# Process ID: 23476
+# Current directory: E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23312 E:\HAHK\BD\2000k\software\HA-CJ-200w-test_v1.00\project_1\project_1.xpr
+# Log file: E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1/vivado.log
+# Journal file: E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/HAHK/BD/2000k/software/HA-CJ-200w-test_v1.00/project_1/project_1.xpr
+update_compile_order -fileset sources_1

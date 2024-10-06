@@ -1,0 +1,142 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:32 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vio_2 (xilinx.com:ip:vio:3.0) from (Rev. 19) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:31 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vio_0 (xilinx.com:ip:vio:3.0) from (Rev. 19) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:30 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_pixel'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_pixel (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:28 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_2 (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:25 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo512bit_1k'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo512bit_1k (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:25 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_1 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Aug 29 09:31:24 2024
+| Host         : LAPTOP-AT92CJ0U running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1157-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 9)
+

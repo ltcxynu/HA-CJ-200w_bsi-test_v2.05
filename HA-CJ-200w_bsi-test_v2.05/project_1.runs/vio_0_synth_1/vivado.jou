@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Aug 29 09:31:47 2024
+# Process ID: 14472
+# Current directory: E:/work/vivado_prj/690t200w/HA-CJ-200w-test_v2.00/project_1.runs/vio_0_synth_1
+# Command line: vivado.exe -log vio_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vio_0.tcl
+# Log file: E:/work/vivado_prj/690t200w/HA-CJ-200w-test_v2.00/project_1.runs/vio_0_synth_1/vio_0.vds
+# Journal file: E:/work/vivado_prj/690t200w/HA-CJ-200w-test_v2.00/project_1.runs/vio_0_synth_1\vivado.jou
+# Running On: LAPTOP-AT92CJ0U, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16498 MB
+#-----------------------------------------------------------
+source vio_0.tcl -notrace
