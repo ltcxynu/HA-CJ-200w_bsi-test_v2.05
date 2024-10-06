@@ -1,2 +1,0 @@
-fifo512bit_1k.v,verilog,xil_defaultlib,../../../../project_1.gen/sources_1/ip/fifo512bit_1k/sim/fifo512bit_1k.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

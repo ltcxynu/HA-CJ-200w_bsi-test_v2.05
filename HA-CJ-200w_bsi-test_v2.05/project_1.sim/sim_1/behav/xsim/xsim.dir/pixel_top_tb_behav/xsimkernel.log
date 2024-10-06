@@ -1,7 +1,0 @@
-Running: xsim.dir/pixel_top_tb_behav/xsimk.exe -simmode gui -wdb pixel_top_tb_behav.wdb -simrunnum 0 -socket 53298
-Design successfully loaded
-Design Loading Memory Usage: 29744 KB (Peak: 29744 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 38704 KB (Peak: 38704 KB)
-Simulation CPU Usage: 890 ms
