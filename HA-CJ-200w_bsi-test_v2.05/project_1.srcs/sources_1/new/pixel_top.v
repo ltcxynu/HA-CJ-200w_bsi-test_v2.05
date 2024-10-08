@@ -126,7 +126,7 @@ module pixel_top #(
 	,output    	wire          mosi
 	,input     	wire          miso
 	,output   	wire 	cs
-
+	,output     wire    led
 
     );
 
@@ -378,7 +378,7 @@ generate for (pin_count = 0; pin_count < 14; pin_count = pin_count + 1) begin: p
 endgenerate
 
 //---------------------------------------------------------------
-//流水线读�?
+//流水线读�??
 
 reg [07:0]	c_state;
 reg [07:0]	n_state;
@@ -783,12 +783,13 @@ always @ (posedge clk125m or negedge rstn) begin
     end 
 end 
 
-(* KEEP = "TRUE" *)wire  [$clog2(540)-1:0]         tfi_addr[0:13];
+(* KEEP = "TRUE" *)wire  [$clog2(540)-1:0]          tfi_addr[0:13];
 (* KEEP = "TRUE" *)wire  [276*4-1:0]         		tfi_data[0:13];
 (* KEEP = "TRUE" *)wire 							tfi_read_en[0:13];
 (* KEEP = "TRUE" *)wire 							led_en[0:13];
 (* KEEP = "TRUE" *)wire led_or_en = led_en[2]|led_en[3]|led_en[4]|led_en[9]|led_en[10]|led_en[11];
-
+(* KEEP = "TRUE" *)wire [13:0] 						led_delay_ms;
+(* KEEP = "TRUE" *)wire [19:0] 						led_sensitive;
 genvar i;
 generate for (i = 0; i < 14; i = i + 1) begin: PP_RAM
 
@@ -839,8 +840,8 @@ generate for (i = 0; i < 14; i = i + 1) begin: PP_RAM
 				.read_sel     (tfi_read_en[i]  			)
 			);
 			saveimg_and_sub #(
-				.DATA_WIDTH (4	),    // 每个数据的位宽  
-				.RAM_DEPTH  (540),   // RAM的深度  
+				.DATA_WIDTH (4	),    // 每个数据的位�?  
+				.RAM_DEPTH  (540),   // RAM的深�?  
 				.NUM_ROWS   (276)     // 行数  
 			)u_saveimg_and_sub(
 				.clk         (clk125m         			),
@@ -848,7 +849,8 @@ generate for (i = 0; i < 14; i = i + 1) begin: PP_RAM
 				.tfi_data    (tfi_data[i]    			),
 				.tfi_addr    (tfi_addr[i]    			),
 				.tfi_read_en (tfi_read_en[i] 			),
-				.led_en	 	 (led_en[i]					)
+				.led_en	 	 (led_en[i]					),
+				.sensitive	 (led_sensitive)
 			);
 			
 		end
@@ -862,6 +864,18 @@ always @(posedge clk125m or negedge rstn) begin
     fifo_wr <= rd_mid;
   end
 end
+vio_4 your_instance_name (
+  .clk(clk),                // input wire clk
+  .probe_out0(led_delay_ms),  // output wire [13 : 0] probe_out0
+  .probe_out1(led_sensitive)  // output wire [19 : 0] probe_out1
+);
+led_trigger u_led_trigger(
+	.trigger  (led_or_en  	),
+	.delay_ms (led_delay_ms ),
+	.led      (led      	),
+	.clk      (clk      	),
+	.rst      (rstn     	)
+);
 
 reg [1931:0] linePix_reorder;
 reg [1919:0] linePix_out;

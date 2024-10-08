@@ -8,7 +8,8 @@ module saveimg_and_sub #(
     input wire [NUM_ROWS*DATA_WIDTH-1:0] tfi_data,
     output reg [$clog2(RAM_DEPTH)-1:0]   tfi_addr,
     output reg                           tfi_read_en,
-    output reg                           led_en
+    output reg                           led_en,
+    input  wire [19:0]                   sensitive       
 );  
     wire [19:0] sum_subtraction_current;
     reg  [19:0] sum_subtraction_before;
@@ -78,7 +79,7 @@ module saveimg_and_sub #(
                 tfi_addr <= 'd0;
                 //地址回到0的时候，一帧计数完成了
                 //此时做差检测。
-                if(sum_subtraction_before - sum_subtraction_current > 20'd74520)
+                if(sum_subtraction_before - sum_subtraction_current > sensitive)
                     led_en <= 1;
                 sum_subtraction_before <= sum_subtraction_current;
             end else begin
